@@ -7,8 +7,27 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <button class="change">Square Count</button>
-        <div class="container"></div>
+        <h1>Etch-a-Sketch</h1>
+        <div class="content">
+            <div class="settings">
+            <button class="change">Square Count</button>
+            <button class="reset">Reset</button>
+            </div>
+            <div class="container"></div>
+        </div>
+        <div class="current">
+            <label>
+                Color:
+                <input type="color" name="colorchoice" value="#FF0000">
+            </label>
+            <p>Current Mode: Single Color</p>
+        </div>
+        <div class="mode">
+            <button class="color">Select Color</button>
+            
+            <button class="random">Random</button>
+            <button class="grey">Grey Scale</button>
+        </div>
     </body>
 
 </html>

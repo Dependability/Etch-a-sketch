@@ -2,14 +2,105 @@
     margin: 0;
     padding: 0
 }
-html,body {
-    height: 100%;
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bbdef0;
+}  
+
+h1 {
+    font-size: 72px;
+    margin: 50px 0;
+}
+
+/* .box {
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    margin-left: -1px;
+    margin-top: -1px;
+} */
+
+
+.content {
+    /* align-self: flex-start; */
+    display: flex;
+    align-items: center;
+}
+
+.mode {
+    border: 3px black solid;
+    width: 400px;
+    height: 80px;
+    margin-top: 25px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mode button {
+    height: 0;
+    border: none;
+    margin: 0 30px;
+    
+
+}
+
+.current {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    background-color: #ffffff;
+    
+
+}
+
+button:hover {
+    background-color: #dbdada;
+}
+.settings {
+    padding: 10px;
+    width: 80px;
+    height: 400px;
+    margin-right: 40px;
+    border-radius: 20px;
+    border: 3px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.settings button {
+    margin: 30px 0;
+}
+
+.settings button, .mode button {
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    border: 3px solid #1d1818 ;
+    border-radius: calc(50% + 5px);
+}
+.change {
+    width: 100px;
+    border: none;
+
 }
 .container {
-    margin-top: 50px;
-    height: 100%;
-    border: 5px dashed black;
+    background-color: white;;
+    height: 30vw;
+    width: 30vw;
+    border: 3px solid black;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    margin-right: 140px;
+    box-shadow: 2px 2px 10px black, -2px -2px 10px black;
+
 }
